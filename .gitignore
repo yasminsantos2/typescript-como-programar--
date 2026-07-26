@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Saida de build (caso use tsc algum dia)
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variaveis de ambiente
+.env
+.env.*
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configuracoes de editor
+.vscode/
+.idea/
+
+# Cache
+*.tsbuildinfo
+.cache/

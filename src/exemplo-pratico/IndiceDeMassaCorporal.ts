@@ -11,6 +11,27 @@ const altura = parseFloat(entradaAltura);
 
 const imc = peso / altura ** 2;
 
-console.log(`O Índice de Massa Corporal é: ${imc.toFixed(2)}`);
+// Classifica o IMC de acordo com o valor calculado.
+if (imc < 18.5) {
+    console.log(`O Índice de Massa Corporal é: ${imc.toFixed(2)}`);
+    console.log("Classificação: Abaixo do peso");
+    process.exit();
+}
 
-rl.close();
+if (imc >= 18.5 && imc < 25) {
+    console.log(`O Índice de Massa Corporal é: ${imc.toFixed(2)}`);
+    console.log("Classificação: Peso normal");
+    process.exit();
+}
+
+if (imc >= 25 && imc < 30) {
+    console.log(`O Índice de Massa Corporal é: ${imc.toFixed(2)}`);
+    console.log("Classificação: Sobrepeso");
+    process.exit();
+}
+
+if (imc >= 30) {
+    console.log(`O Índice de Massa Corporal é: ${imc.toFixed(2)}`);
+    console.log("Classificação: Obesidade");
+    process.exit();
+}

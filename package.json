@@ -2,7 +2,10 @@
   "name": "typescript-como-programar--",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "tsx",
+    "dev": "tsx watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
